@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juegos To Guapos</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .contenedor {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 38px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 30px;
+      background: #d00000;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    #broma {
+      display: none;
+      margin-top: 35px;
+    }
+
+    #broma img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <h1>JUEGOS TO GUAPOS</h1>
+
+    <h2>The Witcher 3 Remastered</h2>
+
+    <p>Descarga disponible</p>
+
+    <button class="boton" onclick="mostrarBroma()">
+      DESCARGAR
+    </button>
+
+    <div id="broma">
+      <p>Preparando descarga...</p>
+      <img src="imagen-053.gif" alt="Sorpresa">
+    </div>
+  </div>
+
+  <script>
+    function mostrarBroma() {
+      document.querySelector(".boton").style.display = "none";
+      document.getElementById("broma").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
